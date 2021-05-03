@@ -1,0 +1,42 @@
+.btn {
+  padding: 14px 39px 14px 53px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+  background: linear-gradient(201.61deg, #732cc4 7.64%, #511893 90.51%);
+  color: $white;
+  font-size: 13px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 11px;
+    top: 50%;
+    left: 27px;
+    transform: translateY(-50%);
+    background-image: url(../images/chevron-right.svg);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    color: $red;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .btn {
+    padding-right: 19px;
+    padding-left: 46px;
+
+    &:before {
+      left: 20px;
+    }
+  }
+}

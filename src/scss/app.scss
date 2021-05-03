@@ -1,0 +1,42 @@
+@import "colors";
+@import "mixins/color";
+@import "mixins/labels";
+@import "buttons";
+@import "navbar";
+@import "hero";
+@import "order";
+@import "features";
+
+body {
+  color: $white;
+  font-size: 17px;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+h1,
+h2 {
+  margin-bottom: 17px;
+}
+.subtitle {
+  margin-bottom: 10px;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 17.7px;
+  color: $grayDark;
+  text-align: center;
+  text-transform: uppercase;
+}
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}

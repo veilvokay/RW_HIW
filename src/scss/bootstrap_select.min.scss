@@ -1,0 +1,25 @@
+@import "colors";
+$color-red-error: $red;
+$color-green-success: $green;
+// $color-grey-arrow: $gray;
+$width-default: 100%;
+@import "../../node_modules/bootstrap-select/sass/bootstrap-select";
+
+// .bootstrap-select > .btn.dropdown-toggle, .bootstrap-select > .btn.dropdown-toggle.disabled {
+//   padding: 0 16px;
+//   border: 1px solid $gray25;
+//   background-color: $white;
+//   font-weight: 400;
+// }
+// .bootstrap-select > .dropdown-toggle.bs-placeholder, .bootstrap-select > .dropdown-toggle.bs-placeholder:hover, .bootstrap-select > .dropdown-toggle.bs-placeholder:focus, .bootstrap-select > .dropdown-toggle.bs-placeholder:active {
+//   font-weight: 400;
+//   color: #000000;
+// }
+// .bootstrap-select > select.mobile-device:focus + .dropdown-toggle, .bootstrap-select .dropdown-toggle:focus {
+//   outline: 0!important;
+//   outline-offset: 0;
+// }
+
+// .bootstrap-select .dropdown-menu li {
+//   line-height: 22px;
+// }

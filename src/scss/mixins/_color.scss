@@ -1,0 +1,23 @@
+@mixin color-theme($name, $prop) {
+  .color-#{$name} {
+    color: nth($prop, 1);
+  }
+}
+
+@mixin color-theme-btn($name, $prop) {
+ .btn.btn-#{$name} {
+    background-color: nth($prop, 1);
+  }
+}
+
+
+$themes: (
+        red: $red,
+        green: $green,
+        blue: $blue,
+  ) !default;
+
+@each $theme, $item in $themes {
+  @include color-theme($theme, $item);
+  @include color-theme-btn($theme, $item);
+}

@@ -1,0 +1,91 @@
+@import "colors";
+$red: $red;
+$green: $green;
+$blue: $blue;
+
+// Typography
+$font-family-sans-serif: "Open Sans", sans-serif;
+$font-family-monospace: "";
+$font-family-base: $font-family-sans-serif;
+
+$font-size-base: 1rem;
+
+$h1-font-size: 34px;
+$h2-font-size: 34px;
+$h3-font-size: 30px;
+$h4-font-size: 27px;
+$h5-font-size: 18px;
+$h6-font-size: $font-size-base * 0.875;
+
+$headings-font-family: $font-family-sans-serif;
+$headings-font-weight: 300;
+$headings-line-height: 47px;
+$headings-color: $grayDark;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color: $blue;
+$link-decoration: none;
+$link-hover-color: $red; //darken($link-color, 15%);
+$link-hover-decoration: none;
+
+// Grid containers
+// $container-max-widths: (
+//         sm: 540px,
+//         md: 720px,
+//         lg: 960px,
+//   xl: 1248px
+// );
+
+// Grid columns
+$grid-columns: 12;
+$grid-gutter-width: 28px;
+// $grid-row-columns:            4;
+
+// Navbar
+// $navbar-nav-link-padding-x:         16px;
+// $nav-link-padding-y:                14px;
+//$navbar-padding-y:                  .5rem;
+//$navbar-padding-x:                  100px;
+
+// Breadcrumbs
+
+// $breadcrumb-font-size:              18px;
+// $breadcrumb-bg:                     0;
+// $breadcrumb-active-color:           #323E48;
+// $breadcrumb-divider:                url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik00LjI5Mjg5IDEuMjkyODlDMy45MDIzNyAxLjY4MzQyIDMuOTAyMzcgMi4zMTY1OCA0LjI5Mjg5IDIuNzA3MTFMOS41ODU3OSA4TDQuMjkyODkgMTMuMjkyOUMzLjkwMjM3IDEzLjY4MzQgMy45MDIzNyAxNC4zMTY2IDQuMjkyODkgMTQuNzA3MUM0LjY4MzQyIDE1LjA5NzYgNS4zMTY1OCAxNS4wOTc2IDUuNzA3MTEgMTQuNzA3MUwxMS43MDcxIDguNzA3MTFDMTIuMDk3NiA4LjMxNjU4IDEyLjA5NzYgNy42ODM0MiAxMS43MDcxIDcuMjkyODlMNS43MDcxMSAxLjI5Mjg5QzUuMzE2NTggMC45MDIzNjkgNC42ODM0MiAwLjkwMjM2OSA0LjI5Mjg5IDEuMjkyODlaIiBmaWxsPSIjMDBCQkUyIi8+Cjwvc3ZnPgo=");
+
+// Buttons
+// $btn-border-radius: 8px;
+// $btn-line-height: 50px;
+// $btn-padding-x: 52px;
+// $btn-padding-y: 0;
+
+// // Forms
+// $input-border-radius: 8px;
+// $input-padding-x: 16px;
+// $input-padding-y: 14px;
+// $input-height: 52px;
+// $input-line-height: 52px;
+// $form-group-margin-bottom: 25px; // 24px
+// $input-border-color: $gray25;
+
+// Dropdown
+// $dropdown-border-radius: 8px;
+// $dropdown-item-padding-x: 15px;
+// $dropdown-link-active-color: #323E48;
+// $dropdown-link-active-bg: #F6F7FB;
+// $dropdown-border-color: $gray25;
+
+// Hr
+// $hr-border-color: #111;
+
+// Tooltip
+// $tooltip-bg: $white;
+// $tooltip-color: #000;
+// $tooltip-padding-y: 1rem;
+// $tooltip-padding-x: $tooltip-padding-y;
+// $tooltip-border-radius: 0.5rem;
+// $tooltip-max-width: 222px;

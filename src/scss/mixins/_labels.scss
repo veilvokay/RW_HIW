@@ -1,0 +1,16 @@
+@mixin label-color($name, $prop) {
+  .label-#{$name} {
+    color: nth($prop, 1);
+    background-color: rgba(nth($prop, 1), 0.1);
+  }
+}
+
+$themes: (
+  red: $red,
+  green: $green,
+  blue: $blue,
+);
+
+@each $theme, $item in $themes {
+  @include label-color($theme, $item);
+}
