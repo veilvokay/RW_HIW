@@ -1,0 +1,50 @@
+.pricing {
+  padding: 50px 0;
+  background-color: $bluish;
+  &-content {
+    margin: 0 auto;
+    max-width: 620px;
+    text-align: center;
+  }
+  &-title {
+    margin-bottom: 12px;
+    color: $white;
+  }
+  &-text {
+    margin-bottom: 21px;
+    color: $gray;
+  }
+  .subtitle {
+    margin-bottom: 19px;
+  }
+  .img-wrapper {
+    margin-bottom: 21px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .pricing {
+    padding: 100px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .pricing {
+    padding: 100px 0;
+    .subtitle {
+      margin-bottom: 5px;
+    }
+    &-title {
+      margin-bottom: 10px;
+    }
+    .img-wrapper {
+      margin-bottom: 36px;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .pricing {
+    padding: 73px 0;
+  }
+}

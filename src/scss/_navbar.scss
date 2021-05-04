@@ -1,11 +1,16 @@
 .header {
   &-hiw {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1;
   }
+}
+.bg {
+  padding: 10px 0;
+  background: linear-gradient(213.28deg, #f56af9 -40.34%, #945edc 95.69%);
+  border-radius: 10px;
 }
 .navbar {
   &-hiw {
@@ -26,10 +31,7 @@
 
     .nav {
       &-item {
-        padding: 0px 25px;
-        &:last-of-type {
-          padding-right: 0;
-        }
+        padding: 0 15px;
         &.action {
           .nav-link {
             background-color: rgba(255, 255, 255, 0.15);
@@ -56,5 +58,39 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .navbar {
+    &-hiw {
+      .nav {
+        &-item {
+          padding: 0px 25px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header {
+    &-hiw {
+      position: absolute;
+    }
+  }
+  .bg {
+    padding: initial;
+    background: transparent;
+    border-radius: 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .navbar {
+    &-hiw {
+      .nav-item {
+        &:last-of-type {
+          padding-right: 0px;
+        }
+      }
+    }
+  }
 }

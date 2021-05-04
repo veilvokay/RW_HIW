@@ -8,23 +8,20 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>How It Works</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" media="all" href="css/bootstrap.min.css" />
     <link rel="stylesheet" media="all" href="css/app.css" />
   </head>
-  <body>
+  <body id="terms">
     <!-- Include header here -->
     @@include('./src/parts/_header.html')
     <main>
       <!-- Include parts of the page content here -->
-      @@include('./src/parts/_hero.html') @@include('./src/parts/_order.html')
-      @@include('./src/parts/_features.html')
-      @@include('./src/parts/_pricing.html')
-      <div class="btn-aside">
-        <a href="./index-2.html" class="home">index-2.html</a>
+      <div class="container">
+        <div class="content">
+          <h1>Terms & Conditions</h1>
+          <a href="/index.html" class="btn">go back</a>
+        </div>
       </div>
     </main>
     <!-- Include footer here -->
@@ -32,6 +29,5 @@
   </body>
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/wow.js"></script>
   <script src="js/app.js"></script>
 </html>

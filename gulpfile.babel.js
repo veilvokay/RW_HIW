@@ -12,11 +12,7 @@ import fileinclude from "gulp-file-include";
 import include from "gulp-include";
 import webpack from "webpack-stream";
 import named from "vinyl-named";
-import replace from "gulp-replace";
 import browserSync from "browser-sync";
-import MiniCssExtractPlugin from "mini-css-extract-plugin";
-// import iconsFont from "./icons.font";
-import info from "./package.json";
 
 const PRODUCTION = yargs.argv.prod;
 
@@ -91,19 +87,12 @@ export const includeJs = () => {
     "src/js/jquery-3.5.1.min.js",
     "src/js/bootstrap.min.js",
     "src/js/popper.js",
+    "src/js/wow.js",
   ])
     .pipe(include())
     .on("error", console.log)
     .pipe(dest("./build/js"));
 };
-
-// Include libs styles files
-// export const includeCss = () => {
-//     return src(['src/scss/owl.theme.default.min.css', 'src/scss/owl.carousel.min.css'])
-//         .pipe(include())
-//         .on('error', console.log)
-//         .pipe(dest('./build/css'));
-// }
 
 // Clean task
 export const clean = () => del(["assets"]);
@@ -168,11 +157,6 @@ export const dev = series(
   clean,
   includeLib,
   parallel(fileInclude, styles, images, copy, scripts, sync)
-);
-export const build = series(
-  clean,
-  parallel(styles, includeJs, images, copy, scripts),
-  production
 );
 
 // Define gulp default task

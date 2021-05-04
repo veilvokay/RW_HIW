@@ -5,9 +5,12 @@
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
+
   &-content {
+    margin: 0 auto;
     max-width: 465px;
     font-size: 15px;
+    text-align: center;
   }
   &-title {
     color: $white;
@@ -18,10 +21,8 @@
     letter-spacing: -0.18px;
   }
 
-  img {
+  .img-wrapper {
     position: absolute;
-    bottom: -45px;
-    right: -255px;
   }
 }
 
@@ -29,6 +30,10 @@
   .hero {
     background-image: url(../images/hero-bg-2.svg);
     padding: 86px 0 152px;
+    .img-wrapper {
+      bottom: -320px;
+      right: 0px;
+    }
   }
 }
 
@@ -36,17 +41,36 @@
   .hero {
     background-image: url(../images/hero-bg-1.svg);
     padding: 104px 0 90px;
+    &-content {
+      margin: auto;
+      text-align: initial;
+    }
+    .img-wrapper {
+      bottom: -17px;
+
+      right: -255px;
+    }
+    img {
+      max-width: 750px;
+    }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
     padding: 181px 0 108px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .hero {
-    text-align: center;
+    .img-wrapper {
+      bottom: -45px;
+    }
+    img {
+      max-width: 920px;
+    }
+    &.hero-2 {
+      padding: 216px 0 155px;
+      background-image: url(../images/hero-bg-4.svg);
+      .img-wrapper {
+        bottom: 56px;
+      }
+    }
   }
 }

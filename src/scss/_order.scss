@@ -18,6 +18,7 @@
       border-radius: 10px;
       background-color: transparent;
       transition: all 0.2s ease-in-out;
+      cursor: pointer;
 
       &:hover {
         background-color: rgba(230, 240, 253, 0.35);
@@ -133,6 +134,12 @@
       background-position: center;
       transform: translateX(-50%);
     }
+  }
+}
+
+@media screen and (min-width: 565px) and (max-width: 767px) {
+  .order {
+    padding-top: 220px;
   }
 }
 

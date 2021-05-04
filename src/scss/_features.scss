@@ -1,6 +1,6 @@
 .features {
   padding: 50px 0;
-  //   position: relative;
+  position: relative;
   background: linear-gradient(213.28deg, #c338c7 -40.34%, #6b36b3 95.69%);
 
   .container {
@@ -8,13 +8,13 @@
   }
 
   &-wrapper {
-    margin: 0 -20px;
     display: flex;
     flex-wrap: wrap;
   }
 
   .single-card {
-    padding: 20px;
+    padding: 30px 25px;
+    position: relative;
     flex: 0 0 50%;
     width: 50%;
     text-align: center;
@@ -34,6 +34,22 @@
       font-size: 14px;
       line-height: 27px;
       letter-spacing: -0.16px;
+    }
+    &:not(:last-of-type) {
+      &:after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        width: 100%;
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0.0001) 3.29%,
+          #ffffff 43.52%,
+          rgba(255, 255, 255, 0.0001) 88.49%
+        );
+      }
     }
   }
 
@@ -92,13 +108,16 @@
   .features {
     padding: 126px 0;
     .single-card {
-      margin: 0 auto;
       padding-top: 50px;
       padding-bottom: 36px;
-      max-width: 386px;
       &:nth-last-child(-n + 2) {
         margin-bottom: -110px;
         padding-top: 90px;
+      }
+      &:not(:last-of-type) {
+        &:after {
+          display: none;
+        }
       }
     }
   }

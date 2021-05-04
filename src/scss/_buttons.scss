@@ -10,6 +10,7 @@
   font-style: normal;
   text-transform: uppercase;
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
 
   &:before {
     position: absolute;
@@ -28,6 +29,40 @@
   &:hover {
     color: $red;
   }
+
+  &-default {
+    padding: 14px 62px;
+    color: #645e5e;
+    background: $white;
+
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.link {
+  &-inline {
+    margin-bottom: 22px;
+    color: $white;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 27px;
+    letter-spacing: -0.15px;
+
+    &:hover,
+    &:active {
+      color: $red;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .link {
+    &-inline {
+      margin-bottom: 0;
+    }
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -37,6 +72,10 @@
 
     &:before {
       left: 20px;
+    }
+    &-default {
+      padding-right: 48px;
+      padding-left: 48px;
     }
   }
 }

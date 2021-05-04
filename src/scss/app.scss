@@ -6,16 +6,29 @@
 @import "hero";
 @import "order";
 @import "features";
+@import "pricing";
+@import "footer";
 
 body {
   color: $white;
   font-size: 17px;
   font-weight: 300;
+}
+main {
   overflow-x: hidden;
 }
 h1,
 h2 {
   margin-bottom: 17px;
+}
+
+h4 {
+  letter-spacing: -0.36px;
+}
+p {
+  font-size: 14px;
+  line-height: 27px;
+  letter-spacing: -0.16px;
 }
 .subtitle {
   margin-bottom: 10px;
@@ -39,4 +52,78 @@ ul,
 li {
   margin: 0;
   padding: 0;
+}
+
+#privacy,
+#terms {
+  .header-hiw {
+    background: linear-gradient(213.28deg, #f56af9 -40.34%, #945edc 95.69%);
+  }
+  main {
+    height: 100vh;
+    .container {
+      height: 100%;
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+.fixed-nav {
+  background: linear-gradient(213.28deg, #f56af9 -40.34%, #945edc 95.69%);
+}
+
+.btn-aside {
+  padding: 14px 32px;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  bottom: 36px;
+  right: 0;
+  background-color: $black;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  transform: translateX(134px);
+  transition: all 0.2s ease-in-out;
+
+  &.open {
+    transform: translateX(0);
+  }
+
+  &:before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 12px;
+    width: 6px;
+    height: 11px;
+    background-image: url(../images/chevron-right.svg);
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h4 {
+    font-size: 27px;
+    letter-spacing: -0.48px;
+  }
+  p {
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: -0.2px;
+  }
 }
